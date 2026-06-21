@@ -44,4 +44,5 @@ This is likely the most complex part of my entire setup. I had to write an entir
 ## iTerm2
 iTerm2 also makes things easy, as they tell you the last compatible version similar to CotEditor.
 
-Overall, Mojave has proved itself to be surprisingly usable, even as a daily driver in 2026. For the average person Mojave would be effectively obsolete, but with the applications I use and my affinity for forcing things to work, Mojave works perfectly fine.
+## What do I think?
+Overall, Mojave has proven itself to be a perfectly viable daily driver as someone who never gives up and has an affinity for forcing things to work. For any average person however, Mojave is effectively obsolete. A lot of applications have dropped it, but to this day, Mojave can still be great if you force it to.
