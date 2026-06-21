@@ -43,7 +43,7 @@ Install it if you haven't already. You will need this
 Install `libcxx`, `libcurl`, and `libssl`
 
 ### 3. Compile the shim
-Run `clang -dynamiclib -o libgdfix.dylib gdfix.c -framework Foundation -install_name @executable_path/libgdfix.dylib` wherever you have the gdfix.c file
+Run `clang -dynamiclib -o libgdfix.dylib gdfix.c -framework Foundation -install_name @executable_path/libgdfix.dylib` wherever you have the gdfix.c file to get the dylib you need
 
 ### 4. Place the compiled dylib in the same place as the game binary
 The game binary should be in `~/Library/Application Support/Steam/steamapps/common/Geometry Dash/Geometry Dash.app/Contents/MacOS/`. You should see an executable file named Geometry Dash, copy your compiled gdfix dylib into that folder.
