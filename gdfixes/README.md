@@ -1,5 +1,41 @@
 So you're here I see. While you won't be in for the same amount of pain as I experienced when I made this, you will definitely have quite the experience.
 
+
+## Preparation (also works as a guide for Catalina)
+If you came here looking for a guide to get it running on Catalina, you are lucky this time. It is incredibly simple to run it on Catalina, and you can completely ignore using a shim or any crashes as Geode and other things will work flawlessly for you.
+
+### 1. Edit Info.plist
+Go into the game's .app file and replace it with this:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleExecutable</key>
+	<string>Geometry Dash</string>
+	<key>CFBundleIconFile</key>
+	<string>Icon</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.robtop.geometrydashmac</string>
+	<key>CFBundleName</key>
+	<string>Geometry Dash</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.208</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.14.0</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+```
+
+### 2. Use the patcher
+Run the patcher.py file with Python 3, it will patch the binary for you
+
+## Patching for Mojave
+
 ### 1. Make sure you have macports installed
 Install it if you haven't already. You will need this
 
