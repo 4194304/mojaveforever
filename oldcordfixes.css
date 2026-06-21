@@ -1,0 +1,77 @@
+/**
+ * @name OldCord Fixes
+ * @version 1.0
+  * @author 4194304
+ * @description Fixes for OldCord when used with old Electron, enable the Discord titlebar first before using this
+ */
+
+.panels__5e434 {
+    margin-left:64px;
+    margin-bottom:-6px;
+}
+.buttons__74017 {
+    top:4px;
+}
+.textArea__74017:not(.textAreaSlate__74017) {
+    margin-top:6px;
+}
+.displayNameRow__26b1f {
+    margin-right:200px;
+    width:100%;
+    justify-content:left;
+}
+.bar_c38106 {
+    display:flex;
+    margin-bottom:24px;
+    justify-content: flex-start; 
+}
+.winButtons_c38106 {
+    bottom:13px;
+    flex-direction:row-reverse;
+    margin-left:102px;
+    width:86px;
+}
+.title_edbb22 {
+    margin-top:-2px;
+    margin-left:-4px;
+}
+.clickable__81391 {
+    display:none;
+}
+.winButtonClose_c38106 {
+    background-color:rgb(240, 100, 84);
+    left:2px;
+}
+.winButtonMinMax_c38106[aria-label="Minimize"] {
+    background-color:rgb(248, 193, 75);
+    left:22px;
+}
+.winButtonMinMax_c38106[aria-label="Maximize"] {
+    background-color:rgb(92, 202, 87);
+    left:42px;
+}
+
+.winButtonClose_c38106:hover {
+    background-color:rgb(227, 23, 0);
+}
+.winButtonMinMax_c38106[aria-label="Minimize"]:hover {
+    background-color:rgb(246, 168, 0);
+}
+.winButtonMinMax_c38106[aria-label="Maximize"]:hover {
+    background-color:rgb(10, 203, 0);
+}
+
+.winButtonMinMax_c38106, .winButtonClose_c38106 {
+    max-width:12px;
+    max-height:12px;
+    top:7px;
+    margin-left:5px;
+    border-radius:50%;
+    position:fixed;
+    -webkit-app-region: no-drag !important;
+    pointer-events: auto !important;
+    cursor: pointer;
+}
+.winButtons_c38106 svg {
+    opacity:0;
+}
