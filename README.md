@@ -39,7 +39,7 @@ With all of this working, you will have Vesktop 1.6.5 working flawlessly on macO
 Steam is one of the most picky applications on this entire list. I had to use archive.org to load a version of the site from November of 2024, then I could download the installer and launch Steam. I also had to force it into using update resources from an archive.org snapshot, and then it finally worked. While the main client does work, you will have to download games from another computer as Steam has a new compression method that will stall and effectively halt game downloads.
 
 ## Geometry Dash
-This is likely the most complex part of my entire setup. I had to write an entire shim to get it to work, and it does run well, but there are certain things that can crash it (such as opening a file dialog). Right now, the main game works perfectly fine, Geode works just fine aside from the one crash I mentioned, and I haven't seen it crash in game. If you want to try this yourself, follow the guide that I will have in the gdfix folder for this repository (will eventually post it).
+This is likely the most complex part of my entire setup. I had to write an entire shim to get it to work, and it does run well, but there are certain things that can crash it (such as opening a file dialog). Right now, the main game works perfectly fine, Geode works just fine aside from the one crash I mentioned, and I haven't seen it crash in game. If you want to try this yourself, follow the guide in the gdfix folder of this repository. It is not easy.
 
 ## iTerm2
 iTerm2 also makes things easy, as they tell you the last compatible version similar to CotEditor.
