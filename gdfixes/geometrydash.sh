@@ -1,0 +1,1 @@
+DYLD_FORCE_FLAT_NAMESPACE=1 DYLD_INSERT_LIBRARIES="/opt/local/lib/libcurl.4.dylib:/opt/local/lib/libcxx/libc++.1.dylib:/Users/$USER/Library/Application Support/Steam/steamapps/common/Geometry Dash/Geometry Dash.app/Contents/MacOS/libgdfix.dylib" "/Users/$USER/Library/Application Support/Steam/steamapps/common/Geometry Dash/Geometry Dash.app/Contents/MacOS/Geometry Dash"
