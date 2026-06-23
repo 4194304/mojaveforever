@@ -65,3 +65,14 @@ BOOL objc_opt_respondToSelector(id obj, SEL sel) {
     if (obj == NULL || sel == NULL) return NO;
     return class_respondsToSelector(object_getClass(obj), sel);
 }
+
+__attribute__((visibility("default")))
+id objc_opt_self(id obj) {
+    return obj;
+}
+
+__attribute__((visibility("default")))
+BOOL objc_opt_respondToSelector(id obj, SEL sel) {
+    if (obj == NULL || sel == NULL) return NO;
+    return class_respondsToSelector(object_getClass(obj), sel);
+}
