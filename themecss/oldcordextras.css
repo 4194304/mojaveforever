@@ -1,0 +1,95 @@
+/**
+ * @name OldCord Extras
+ * @version 1.0
+  * @author Skeletor
+ * @description Squaring off Discord's design
+ */
+
+/* helvetica neue is the best vector font */
+*, textarea::placeholder {
+    font-family:".HelveticaNeueDeskInterface-Regular" !important;
+    font-weight:400 !important;
+}
+
+/* remove borders */
+*:not(.unread__2ea32, .item__58105) {
+    border-radius:0px !important;
+    border-top-left-radius:0px !important;
+    border-top-right-radius:0px !important;
+}
+
+/* make sure that removing borders doesn't kill the window buttons or vesktop's switches */
+.winButtonMinMax_c38106, .winButtonClose_c38106 {
+    border-radius: 50% !important;
+}
+
+.vc-switch-container {
+    border-radius:20px !important;
+}
+
+/* remove even more borders */
+* {
+    mask:none !important;
+}
+
+/* curse you discord */
+.guildSeparator__252b6 {
+    min-width:100%;
+}
+
+:is(html.platform-linux, html.platform-win) #app-mount .sidebarListRounded__5e434 {
+    border-radius:0px !important;
+    border-top-left-radius:0px !important;
+    border-top-right-radius:0px !important;
+}
+
+/* status icons, why did they have to make 9 different types of them */
+.pointerEvents__44b0c, .cursorDefault__44b0c rect, .avatar__37e49 svg rect {
+    rx: 50% !important;
+    stroke: rgba(0, 0, 0, 0.5) !important;
+    stroke-width:1px;
+    width:10px;
+    height:10px;
+}
+
+.pointerEvents__44b0c, .cursorDefault__44b0c rect {
+    y:22;
+    x:22;
+}
+
+.avatar__37e49 svg rect {
+    y:5;
+    x:8; 
+}
+
+.cursorDefault__44b0c rect {
+    width:10px;
+    height:10px;
+    transform: translate(7px, 5px);
+}
+.circleIconButton__5bc7e {
+    position:absolute;
+    left:-5px;
+    top:-3px;
+    width:50px !important;
+}
+.iconBadge__9293f {
+    border-radius:50% !important;
+}
+.status_a423bd {
+    border-radius:50% !important;
+    border:1px solid rgba(0, 0, 0, 0.5) !important;
+    position:absolute;
+    width:8px;
+    height:8px;
+}
+.avatar_f75fb0 rect {
+    transform: translate(-7px, -7px);
+}
+.avatar__75742 .pointerEvents__44b0c {
+    transform: translate(48px, 48px);
+}
+/* get rid of that stupid gradient */
+.wrapper_ef3116 {
+    margin:0px !important;
+}
