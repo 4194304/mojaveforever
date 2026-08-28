@@ -1,4 +1,4 @@
-# The Mojave Experiment
+# WEBSITE IS A WORK IN PROGRESS AND WILL BE COMING SOON
 The day was Thursday, June 18, 2026. After a few days of contemplating my next move and getting bored with Catalina, I reached a decision. It was time to leave Catalina behind.
 
 I had enjoyed my experience with Catalina. In fact, I thought that my experience with Catalina was great, if not the best operating system I had ever used. However, it was just too usable. I wanted something that would be a challenge...
