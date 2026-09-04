@@ -1,6 +1,3 @@
-// compile this with that command below, you will likely forget
-// clang -dynamiclib -o ~/Documents/optfix/optfix.dylib ~/Documents/optfix/optfix.c -framework Foundation -install_name @executable_path/optfix.dylib
-
 #include <objc/runtime.h>
 #include <objc/message.h>
 #include <stddef.h>
