@@ -1,2 +1,3 @@
-<h1>Compilation</h1>
+# Compilation
+
 To compile this, run ```clang -dynamiclib -o optfix.dylib optfix.c -framework Foundation -install_name @executable_path/optfix.dylib```
