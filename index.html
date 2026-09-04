@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>Mojave Forever</title>
+		<link rel="stylesheet" type="text/css" href="assets/style.css">
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="topelements">
+				<p class="lit">Information</p>
+				<p>Tweaks</p>
+				<p>Downloads</p>
+			</div>
+		</div>
+		<div class="sidebar">
+			<p><a href="#why">Why Mojave?</a></p>
+			<p><a href="#hardware">Hardware</a></p>
+		</div>
+		<div class="writing">
+			<h1>Mojave Forever</h1>
+			<div class="morewriting">
+				<h2>In May of 2026, after years of searching, I had decided that it was time to leave newer operating systems behind.</h2>
+				<p>I had gone through nearly every OS known to man. I had used Linux, I had used Windows, I had also previously used macOS Catalina and Big Sur years back. But in my time revisiting macOS after successfully Hackintoshing, I found that despite having to use UHD 630, macOS was the place to stay.</p>
+				<br>
+			</div>
+			<div class="morewriting">
+				<h2 id="why">Why Mojave specifically?</h2>
+				<p>When I had successfully Hackintoshed, I chose Catalina. I specifically wanted the older design from the 10.10 - 10.15 era, as I absolutely loathe liquid glass and also hate the newer iOS-like design seen in Big Sur and newer. On top of that, I was already perfectly familiar with it, so it would effectively be revisiting the same OS I had used 6 years earlier.</p>
+				<br>
+				<p>Over time, as I got bored with Catalina, I decided to experiment with other options. The other three OSes I tested were Mojave, High Sierra, and Windows Vista.</p>
+				<br>
+				<h3>Mojave</h3>
+				<p>By the time June came around, interested in expanding my quintuple boot setup and seeing how far back Geometry Dash could run, I decided to try Mojave. In order to install it I only had to set MinDate and MinVersion in OpenCore to -1, and then from there it was smooth sailing. I was completely expecting it to be unusable, having seen the cliff that is software support between Catalina and Mojave. After screwing around with software, and finding ways to extend what Mojave could normally do, I found that it was a perfectly viable daily driver. That was until August, when I decided to try some other more OSes.</p>
+				<br>
+				<h3>High Sierra</h3>
+				<p>Interested in getting my GTX 1050 Ti to work and getting subpixel font rendering, I decided to try High Sierra. It took at least a day to modify my config to work, and I installed it, but even then I had another challenge ahead of me, that was getting graphics drivers to work. It took at least 4 days, and I was not able to get the drivers to work, which effectively defeated the entire point of installing High Sierra. Furthermore, apps that worked just fine on Mojave that should have worked perfectly fine on High Sierra like Vesktop 1.6.5 would always give BPT/Trap 5, an error that I was never able to fully figure out. Despite also having an Early 2014 MacBook Air on it, I ran into the same compatibility issues, and on top of all of that, it also was not noticeably faster compared to Mojave.</p>
+				<br>
+				<h3>Windows Vista</h3>
+				<p>After being a bit frustrated with the results of trying High Sierra, I decided to take an even further step back and try Windows Vista. Set on chasing the dream of installing Vista on physical hardware and with new projects existing for Vista like Second System, I was hopeful that I would be able to daily drive it in some form. After taking the dusty old desktop computer out of the corner of my room to test Vista on, I found that software compatibility was anything but decent. Even with Second System, most Qt5 apps and even older Electron apps would refuse to run.</p>
+				<br>
+				<h2>The options</h2>
+				<br>
+				<p class="leftshifted">I had many options in this scenario, a few were:</p>
+				<ul>
+					<li>Use macOS Mojave and continue extending app compatibility</li>
+					<br>
+					<li>Spend even more time trying to get High Sierra to work</li>
+					<br>
+					<li>Be a little bit more patient and force Vista to be decent enough</li>
+					<br>
+					<li>Go back to Catalina</li>
+				</ul>
+				<br>
+				<p>Most of them seemed like a path to pain, misery, or boredom, so I decided to choose macOS Mojave. Unlike Catalina, Mojave lacks a lot of restrictions on the system, and in addition, Mojave also has 32bit app support as a fun bonus. Compared to older versions like High Sierra, Mojave also has many quality of life improvements and features such as cleaning up files, more accent colors, expanded screen capture options, and most notably dark mode.</p>
+				<p>High Sierra also did not have any very desirable features, given that not only apps would crash, but I also had no hardware acceleration at all on my main computer. There were no significant performance improvements either, so High Sierra was out.</p>
+				<p>Vista would be an absolute pain in regard to shimming and bridging compatibility gaps, so it was a bit of a use what you have or leave type of situation. None of what I had was good enough, so I chose to leave Vista behind.</p>
+				<br>
+				<p>So the choice had been made, it was Mojave.</p>
+			</div>
+			<div class="morewriting">
+				<h1 id="hardware">Hardware</h1>
+				<p>When it comes to Mojave, any computer with hardware from early 2019 should work just fine, given that it has a metal capable graphics card or integrated graphics.</p>
+				<br>
+				<h2>My main computer</h2>
+				<p>My main computer is a typical computer from 2018/2019. It has a GTX 1050 Ti, a 9900K, 32GB RAM, an EVO 970 1TB SSD, and a 2TB 7200RPM hard disk. For Mojave it is absolutely overkill, but a thing that Mojave just so happened to drop was support for all cards from Maxwell to Pascal (the GTX 1050 Ti is a Pascal card).</p>
+				<p>Thanks to my CPU being a 9900K and NOT a 9900KF, I was able to use UHD 630 which worked right out of the box. On my SSD it runs perfectly and I have absolutely no complaints with it at all.</p>
+				<br>
+				<h2>The Late 2013 MacBook Pro</h2>
+				<p>Being natively supported, my old MacBook Pro runs Mojave perfectly, especially with its 16GB of RAM and the GT 750M.</p>
+				<p>Mainly being more of a travel laptop when I can't use my main computer, it works perfectly fine.</p>
+			</div>
+		</div>
+	</body>
+</html>

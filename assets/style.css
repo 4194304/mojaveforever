@@ -1,0 +1,157 @@
+@font-face {
+	font-family: 'TeX Gyre Heros';
+	src: url('gyreheros-regular.otf') format('opentype');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'TeX Gyre Heros';
+	src: url('gyreheros-bold.otf') format('opentype');
+	font-weight:bold;
+	font-style:normal;
+}
+
+* {
+    font-family: Helvetica Neue, 'TeX Gyre Heros', Helvetica, sans-serif;
+  	text-align:center;
+}
+
+body {
+	background-color:#1a1b1d;
+}
+
+.topbar {
+	position:sticky;
+	margin:-8px;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+	background-image: linear-gradient(to bottom, #414142, #353536);
+	color:white;
+	min-height:48px;
+	z-index:5;
+	border-bottom:1px solid black;
+}
+
+.topelements {
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+	max-height:22px;
+	background-color:#67686b;
+	border:1px solid #78797c;
+	border-radius:4px;
+	overflow: hidden;
+}
+
+.topelements > * {
+	font-size:18px;
+	padding-right:6px;
+	padding-left:6px;
+}
+
+.topelements > *:not(:last-child) {
+	border-right:1px solid #595b5e;
+	margin:0px;
+}
+
+.lit {
+	background-color:#c4c4c4;
+	color:#393a3c;
+}
+
+.writing {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	color:white;
+}
+
+h1 {
+	font-weight:bold;
+}
+.morewriting {
+	background-image:url('paper.png');
+	max-width:50%;
+	min-width:640px;
+	padding:12px;
+	border:solid 1px #565656;
+	border-radius:5px;
+ 	outline: 1px solid black;
+ 	margin-bottom:20px;
+}
+
+.morewriting p {
+	color:#cfcfcf;
+}
+
+ul {
+	display:inline-block;
+}
+li {
+	text-align:left;
+}
+.leftshifted {
+	text-align:left;
+	margin-left:40px;
+	font-weight:500;
+	margin-bottom:0px;
+}
+
+.sidebar {
+	display:flex;
+	position:fixed;
+	top:7px;
+	flex-direction:column;
+	background-color:#282828;
+	border-right:1px solid black;
+	align-items:center;
+	justify-content:center;
+	color:white;
+	width:200px;
+	margin:-8px;
+	z-index:4;
+	height:100%;
+}
+
+p a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+@media screen and (max-width: 1280px) {
+  .morewriting {
+	min-width:640px;
+  }
+  .writing {
+  	position:absolute;
+	left:200px;
+	}	
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+	display:none;
+  }
+  .writing {
+  	position:normal;
+	left:0px;
+	}
+}
+
+@media screen and (max-width: 680px) {
+  .morewriting {
+	min-width:100%;
+  }
+}
