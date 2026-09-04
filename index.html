@@ -2,9 +2,10 @@
 	<head>
 		<title>Mojave Forever</title>
 		<link rel="stylesheet" type="text/css" href="assets/style.css">
+		<link rel="icon" type="image/png" href="assets/icon.png">
 	</head>
 	<body>
-		<div class="topbar">
+		<div class="topbar" id="top">
 			<div class="topelements">
 				<p class="lit">Information</p>
 				<p>Tweaks</p>
@@ -12,13 +13,17 @@
 			</div>
 		</div>
 		<div class="sidebar">
+			<p><a href="#top">Introduction</a></p>
 			<p><a href="#why">Why Mojave?</a></p>
 			<p><a href="#hardware">Hardware</a></p>
+			<p><a href="#setup">Initial Setup</a></p>
+			<p><a href="#postinstall">Post Install</a></p>
+			<p><a href="#extras">Extras</a></p>
 		</div>
 		<div class="writing">
 			<h1>Mojave Forever</h1>
 			<div class="morewriting">
-				<h2>In May of 2026, after years of searching, I had decided that it was time to leave newer operating systems behind.</h2>
+				<h2 id="intro">In May of 2026, after years of searching, I had decided that it was time to leave newer operating systems behind.</h2>
 				<p>I had gone through nearly every OS known to man. I had used Linux, I had used Windows, I had also previously used macOS Catalina and Big Sur years back. But in my time revisiting macOS after successfully Hackintoshing, I found that despite having to use UHD 630, macOS was the place to stay.</p>
 				<br>
 			</div>
@@ -66,7 +71,41 @@
 				<br>
 				<h2>The Late 2013 MacBook Pro</h2>
 				<p>Being natively supported, my old MacBook Pro runs Mojave perfectly, especially with its 16GB of RAM and the GT 750M.</p>
-				<p>Mainly being more of a travel laptop when I can't use my main computer, it works perfectly fine.</p>
+				<p>Mainly being more of a travel laptop when I can't use my main computer, it works fine enough. The only real complaint I have with it is that the normal keyboard doesn't work, so I have to put an external keyboard over it when I use it. Either way with its graphics card, 16GB RAM, and its i7-4850HQ, it runs everything perfectly and Mojave is butter smooth.</p>
+				<br>
+				<h2>The Early 2014 MacBook Air</h2>
+				<p>Now on the opposite side of the spectrum, we have the Early 2014 MacBook Air.  </p>
+				<p>This computer only has an i5-4260U, 4GB of RAM, and 128GB of storage. Intending on using it for random tasks as a daily laptop, using Monterey or Sequoia would be painfully slow. Even still on Mojave, it lags and stutters at times, but it's not that bad. It works fine for most tasks.</p>
+			</div>
+			<div class="morewriting">
+				<h1 id="setup">Initial Setup</h1>
+				<p>In order to install Mojave, you'll either have to upgrade from the App Store, or you'll have to write an install image to a disk. I tried both methods.</p>
+				<p>The process through the App Store is very self explanatory. Search it up and install it.</p>
+				<p>As for creating a bootable installer, if you're on a newer version of macOS you are not entirely screwed. What I found to work was using dosdude1's <a class="visiblelink" href="https://dosdude1.com/mojave/">macOS Mojave Patcher</a> to download and write the install media. The patcher tool uses 10.14.4. 10.14.4 is new enough to install on my Hackintosh setup without having to screw around with spoofing, but there are also many issues with certificates as it was released back in March of 2019.</p>
+				<p>To fix these issues with certificates, download the <a href="https://support.apple.com/en-us/106426" class="visiblelink">macOS Mojave 10.14.6 Combo Update.</a></p>
+				<br>
+				<p><b>IMPORTANT:</b> If you have a Mac that uses the older startup sound (the F# chime) and you want to keep it, DO NOT update to Mojave 2021-005, otherwise it will flash the newer firmware that flattens it.</p> 
+			</div>
+			<div class="morewriting">
+				<h1 id="postinstall">Post-Install</h1>
+				<p>After installing Mojave and installing the combo update if necessary, you should have a fully usable system at your fingertips. Safari on Mojave is very outdated and has not gotten any updates since July of 2021. While it somehow manages to still work with websites like YouTube, I would not recommend using it today. Instead, I would recommend the following:</p>
+				<br>
+				<h2>Firefox 115 ESR</h2>
+				<p>As I like to call this release the immortal release of Firefox, Firefox 115 released back in July of 2023 but still manages to receive updates to this day (until March 2027, but they'll likely extend it again). It still works with nearly any website you'd likely use, and I haven't seem to have found a website where it doesn't work. Even still you might consider the next option:</p>
+				<h2>Momiji</h2>
+				<p>Built for 10.7 - 10.14 as a fork of Firefox 140 ESR, Momiji would definitely be more compatible with those edge case websites than Firefox 115 ESR. The experience on Momiji vs Firefox 115 ESR is nearly identical aside from some newer Firefox features being present (that aren't really important in the slightest), and I'd say that if you want the most up to date browser, Momiji is really your only option.</p>
+				<h2>Google Chrome/Chromium</h2>
+				<p>If you're feeling a bit adventurous and want to take advantage of what I've been working on, you can try Chromium 128 or Google Chrome 128. Chromium 128 is pretty easy to set up (compared to Chrome at least), only requiring that you screw around a bit with the shim I have, but Google Chrome requires you to completely strip it of code signing first before you run it. The only reason why I recommend this over Chromium Legacy is that Chromium Legacy is stuck at 124, and that my shim allows running the official binaries up to 128. Sure it might be unstable, but from my testing both Google Chrome, Chromium, and Electron work perfectly (I have even found myself using Chromium like a normal browser at times).</p>
+				<p><b>DISCLAIMER:</b> If you decide to go for this option, I'd highly recommend disabling Gatekeeper. Even then, disabling Gatekeeper is pretty risky so I would not recommend using it if you have some very sensitive data. If you are absolutely dead set on having Gatekeeper enabled (just go for Momiji at that point, you'll save yourself of some suffering), you can ad-hoc sign everything.</p>
+			</div>
+			<div class="morewriting">
+				<h1 id="extras">Extras</h1>
+				<p>Now that you have looked through everything on this page, take a look at the some of the tweaks and downloads that I have. My main project is OptFix, which is a library that ports quite a few functions from Catalina (and newer) so more modern applications can work under 10.14 like Pixelorama 1.2, LWJGL 3.4, Electron 32, Chromium (and Google Chrome) 128, Geometry Dash 2.2081 (with Geode), and the latest version of OpenRGB (as of this page's writing, it is 1.0-rc3 hotfix 1).</p>
+				<p><b>DISCLAIMER:</b> It does require disabling Gatekeeper, which would effectively get rid of most of Mojave's built in security, but if you're fine with being completely responsible for every single action you take and you have nothing super important, then you can try it. Whatever happens, you're on your own, treat it like you're working with an unrestricted environment like Linux that places all of the responsibility on you, and be extremely careful and cautious in your actions.</p>
+				<div class="horizontal">
+					<button>Tweaks</button>
+					<button>Downloads</button>
+				</div>
 			</div>
 		</div>
 	</body>
